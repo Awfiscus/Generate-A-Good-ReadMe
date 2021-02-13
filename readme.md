@@ -11,7 +11,8 @@ user entry data
 [3. Usage Information](#usage-information)\
 [4. Contribution Guidelines](#contribution-guidelines)\
 [5. Test Instructions](#test-instructions)\
-[6. License](#license)
+[6. Questions](#questions)
+[7. License](#license)
 
 ## Installation instructions
 
@@ -28,6 +29,11 @@ user entry data
 ## Test instructions
 
 user entry data
+
+## Questions
+
+github
+email
 
 ## License
 
