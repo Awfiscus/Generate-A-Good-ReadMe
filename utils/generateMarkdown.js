@@ -1,8 +1,15 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(license = "MIT") {
-    
+  if(license === "MIT") {
+    return `MIT License`
+  } else if (license === "GNU GPLv3") {
+    return `GNU GENERAL PUBLIC LICENSE
+    Version 3, 29 June 2007`
+  } else if (license === "Apache License 2.0") {
+    return `Apache License Version 2.0, January 2004`
+  } else {
+    return ``
   }
 }
 
@@ -64,6 +71,8 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ${renderLicenseBadge()}
 
   ## Description
   

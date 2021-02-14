@@ -52,7 +52,7 @@ const questions = [
     {
        type: "list",
        message: "Choose a license to include on your project",
-       choices: ["MIT", "GNU GPLv3", "Apache License 2.0"],
+       choices: ["MIT", "GNU GPLv3", "Apache License 2.0", "Choose Later"],
        name: "license" 
     }
 ];
