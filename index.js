@@ -33,17 +33,42 @@ const questions = [
         type: "input",
         message: "What are the testing instructions for your project?",
         name: "test"
+    },
+    {
+        type: "input",
+        message: "What is your github username?",
+        name: "github"
+    },
+    {
+        type: "input",
+        message: "What is your email address?",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "What other information would you like to add to the Questions section?",
+        name: "questions"
+    },
+    {
+       type: "list",
+       message: "Choose a license to include on your project",
+       choices: ["MIT", "GNU GPLv3", "Apache License 2.0"],
+       name: "license" 
     }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(data) {
+    fs.writeFile("readME.md", generateMarkdown(data), (err) => {
+        err ? console.error(err) : console.log("Successfully made!");
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
     .prompt([...questions])
-    .then(response => console.log(response))
+    .then(data => writeToFile(data))
 }
 
 // Function call to initialize app
