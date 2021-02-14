@@ -31,6 +31,8 @@ To install this project please go to my github profile and find the project. Aft
 To use begin in your terminal and use the command node index.js while navigated in the directory with the proper index.js file. This will kick off a series of prompts that you will answer to populate the readMe.md file.\
 ![Image of starting Command and Prompts](Screenshot-Start-and-Prompts.png)
 
+[Here is a link to a video on how to use it.](https://drive.google.com/file/d/1HrvlJg3oeME6p2m5vYBC6t6O0CqBJgQV/view?usp=sharing)
+
 ## Contribution Guidelines
 
 Please ask first before contributing to this project.
