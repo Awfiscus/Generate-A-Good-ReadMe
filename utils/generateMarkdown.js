@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//function that renders the license badge depeneding on which license those chose
 function renderLicenseBadge(license) {
   if(license === "MIT") {
     return `MIT License`
@@ -13,8 +12,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//function that renders the license depending on which one the user chooses, retunrs an epmty string if none are chosen
 function renderLicenseLink(license) {
   if(license === "MIT") {
     return `[MIT License Link](https://choosealicense.com/licenses/mit/)`
@@ -27,8 +25,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+//returns the license info section depending on the license choosen if none is chosen then an empty string is returned
 function renderLicenseSection(license) {
   if(license === "MIT") {
     return `MIT License
@@ -68,7 +65,7 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+//function creates the Markdown based on the user choices through the prompts
 function generateMarkdown(data) {
   return `# ${data.title}
 
